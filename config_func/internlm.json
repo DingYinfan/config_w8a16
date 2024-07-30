@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "internlm_7b_w8a16_wo_kv",
+        "args": "--model=internlm_7b_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 2048 --quantization=w8a16 --dataset=./llm_samples_new/internlm/internlm_7b-w8a16.json --tensor-parallel-size=1 --save-output=./output/internlm/internlm_7b-w8a16.json  --trust-remote-code"
+    }
+]

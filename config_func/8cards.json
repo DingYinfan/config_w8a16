@@ -1,0 +1,6 @@
+[	
+    {
+        "model_name": "bloomz_w8a16_wo_kv",
+        "args": "--model=bloomz_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len=2048 --quantization=w8a16 --dataset=./llm_samples_0.3.3/bloomz/bloomz_w8a16_wo_kv-half.json --tensor-parallel-size=8 --save-output=./real_data_json/bloomz/bloomz_w8a16_wo_kv-half.json"
+    }
+]

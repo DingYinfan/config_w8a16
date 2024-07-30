@@ -1,0 +1,21 @@
+[
+    {
+        "model_name": "chatglm2_6b_w8a16",
+        "args": "--model=chatglm2_6b_w8a16 --device=cuda --dtype=float16 --max-model-len 32768 --quantization=w8a16 --dataset=./llm_samples_new/chatglm/chatglm2-6b-w8a16.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm2-6b-w8a16.json  --trust-remote-code"
+    },
+	
+    {
+        "model_name": "chatglm2-6b-32k_w8a16_wo_kv",
+        "args": "--model=chatglm2-6b-32k_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 32768 --quantization=w8a16 --dataset=./llm_samples_new/chatglm/chatglm2-6b-32k_w8a16.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm2-6b-32k_w8a16.json --trust-remote-code"
+    },
+		
+    {
+        "model_name": "chatglm3-6b-8k_w8a16_wo_kv",
+        "args": "--model=chatglm3-6b-8k_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 8192 --quantization=w8a16 --dataset=./llm_samples_new/chatglm/chatglm3-6b-8k-w8a16.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm3-6b-8k-w8a16.json --trust-remote-code"
+    },
+			
+    {
+        "model_name": "chatglm3-6b-32k_w8a16_wo_kv",
+        "args": "--model=chatglm3-6b-32k_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 32768 --quantization=w8a16 --dataset=./llm_samples_new/chatglm/chatglm3-6b-32k_w8a16.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm3-6b-32k_w8a16.json --trust-remote-code"
+    }
+]

@@ -1,0 +1,6 @@
+[	
+    {
+        "model_name": "bloomz_w8a16_wo_kv",
+        "args": "--vllm-path=bloomz_w8a16_wo_kv --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --tensor-parallel-size=8 --model-kwargs dtype=float16"
+    }
+]

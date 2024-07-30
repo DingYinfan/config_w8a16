@@ -1,0 +1,21 @@
+[
+    {
+        "model_name": "Qwen-14B-Chat_w8a16_wo_kv",
+        "args": "--model=Qwen-14B-Chat_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 2048 --quantization=w8a16 --dataset=./llm_samples_new/qwen/Qwen-14B-Chat_w8a16.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen-14B-Chat_w8a16.json --trust-remote-code"
+    },
+	
+    {
+        "model_name": "Qwen-72B-Chat_w8a16_wo_kv",
+        "args": "--model=Qwen-72B-Chat_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 2048 --quantization=w8a16 --dataset=./llm_samples_new/qwen/Qwen-72B-Chat_w8a16.json --tensor-parallel-size=4 --save-output=./output/qwen/Qwen-72B-Chat_w8a16.json --trust-remote-code"
+    },
+    
+    {
+        "model_name": "Qwen1.5_32B_w8a16_wo_kv",
+        "args": "--model=Qwen1.5_32B_w8a16_wo_kv --device=cuda  --max-model-len=4096 --quantization w8a16 --dtype=float16 --dataset=./llm_samples_new/qwen/Qwen1.5-32B-quant-float16-w8a16.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen1.5-32B-quant-float16-w8a16.json"
+    },
+ 
+    {
+        "model_name": "Qwen1.5-14B-Chat_w8a16_wo_kv",
+        "args": "--model=Qwen1.5-14B-Chat_w8a16_wo_kv --device=cuda --dtype=float16 --quantization w8a16 --max-model-len=4096 --dataset=./llm_samples_new/qwen/Qwen1.5-14B-Chat-w8a16.json --tensor-parallel-size=1 --save-output=./output/qwen/Qwen1.5-14B-Chat-w8a16.json"
+    }
+]

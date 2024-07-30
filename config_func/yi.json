@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "yi-34b_w8a16_wo_kv",
+        "args": "--model=yi-34b_w8a16_wo_kv --device=cuda --dtype=float16 --quantization w8a16 --max-model-len=4096 --dataset=./llm_samples_new/Yi/yi-34b-w8a16-float16.json --tensor-parallel-size=2 --save-output=./output/Yi/yi-34b-w8a16-float16.json"
+    }
+]

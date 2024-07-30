@@ -1,0 +1,26 @@
+[	
+    {
+        "model_name": "chatglm2_6b_w8a16",
+        "args": "--vllm-path=chatglm2_6b_w8a16 --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=w8a16"
+    },
+	
+    {
+        "model_name": "chatglm2_6b_w8a16-2cards",
+        "args": "--vllm-path=chatglm2_6b_w8a16 --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=2 --model-kwargs dtype=float16 quantization=w8a16"
+    },
+	
+    {
+        "model_name": "chatglm2-6b-32k_w8a16_wo_kv",
+        "args": "--vllm-path=chatglm2-6b-32k_w8a16_wo_kv --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=w8a16"
+    },
+	
+    {
+        "model_name": "chatglm3-6b-8k_w8a16_wo_kv",
+        "args": "--vllm-path=chatglm3-6b-8k_w8a16_wo_kv --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=w8a16"
+    },
+	
+    {
+        "model_name": "chatglm3-6b-32k_w8a16_wo_kv",
+        "args": "--vllm-path=chatglm3-6b-32k_w8a16_wo_kv --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=w8a16"
+    }
+]

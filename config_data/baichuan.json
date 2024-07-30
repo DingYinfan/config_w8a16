@@ -1,0 +1,11 @@
+[	
+    {
+        "model_name": "baichuan2_7b_base_w8a16",
+        "args": "--vllm-path=baichuan2_7b_base_w8a16 --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=w8a16"
+    },
+	
+    {
+        "model_name": "baichuan2_13b_w8a16_wo_kv",
+        "args": "--vllm-path=baichuan2_13b_w8a16_wo_kv --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --work-dir=outputs --batch-size=3 --tensor-parallel-size=1 --model-kwargs dtype=float16 max_model_len=4096 quantization=w8a16 gpu_memory_utilization=0.75"
+    }
+]

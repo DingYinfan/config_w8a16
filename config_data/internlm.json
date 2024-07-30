@@ -1,0 +1,6 @@
+[	
+    {
+        "model_name": "internlm_7b_w8a16_wo_kv",
+        "args": "--vllm-path=internlm_7b_w8a16_wo_kv --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 max_model_len=2048 quantization=w8a16"
+    }
+]

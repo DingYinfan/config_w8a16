@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "ziya_coding_34b_w8a16",
+        "args": "--model=ziya_coding_34b_w8a16 --device=cuda --dtype=float16 --max-model-len 4096 --quantization=w8a16 --dataset=./llm_samples_new/ziya_w8a16_wo_kv/ziya_coding_34b_v1.0-w8a16.json --tensor-parallel-size=1 --save-output=./output/ziya_w8a16_wo_kv/ziya_coding_34b_v1.0-w8a16.json --template=templates/template_ziya_completion.jinja"
+    }
+]
