@@ -1,7 +1,7 @@
 [
     {
-        "model_name": "baichuan2_7b_base_w8a16",
-        "args": "--model=baichuan2_7b_base_w8a16 --device=cuda --dtype=float16 --max-model-len=4096 --quantization=w8a16 --dataset=./llm_samples_new/baichuan2/baichuan2-7B-base-w8a16.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-7B-base-w8a16.json --trust-remote-code"
+        "model_name": "baichuan2-7B-base-w8a16-wo-kv",
+        "args": "--model=baichuan2-7B-base-w8a16-wo-kv --device=cuda --dtype=float16 --max-model-len=4096 --quantization=w8a16 --dataset=./llm_samples_new/baichuan2/baichuan2-7B-base-w8a16.json --tensor-parallel-size=1 --save-output=./output/baichuan2/baichuan2-7B-base-w8a16.json --trust-remote-code"
     },
     
     {

@@ -2,5 +2,10 @@
     {
         "model_name": "bloomz_w8a16_wo_kv",
         "args": "--vllm-path=bloomz_w8a16_wo_kv --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --tensor-parallel-size=8 --model-kwargs dtype=float16 quantization=w8a16 "
+    },
+
+    {
+        "model_name": "llama3_70b_w8a16_groupsize_64",
+        "args": "--vllm-path=llama3_70b_w8a16_groupsize_64 --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --max-out-len=10 --batch-size=1 --tensor-parallel-size=8 --model-kwargs dtype=float16 max_model_len=8192 quantization=w8a16"
     }
 ]

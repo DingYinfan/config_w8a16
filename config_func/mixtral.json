@@ -1,6 +1,6 @@
 [
     {
-        "model_name": "mixtral_8x7b_w8a16",
-        "args": "--model=mixtral_8x7b_w8a16 --device=cuda --dtype=float16 --max-model-len 4096 --quantization=w8a16 --dataset=./llm_samples_new/mistral-7b-v0.1/mixtral_8x7b_v0.1-w8a16.json --tensor-parallel-size=4 --save-output=./output/mistral-7b-v0.1/mixtral_8x7b_v0.1-w8a16.json"
+        "model_name": "mixtral-8x7B-v0.1-w8a16_wo_kv",
+        "args": "--model=mixtral-8x7B-v0.1-w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 4096 --quantization=w8a16 --dataset=./llm_samples_new/mixtral/mixtral_8x7b_v0.1-w8a16.json --tensor-parallel-size=4 --save-output=./output/mixtral/mixtral_8x7b_v0.1-w8a16.json"
     }
 ]

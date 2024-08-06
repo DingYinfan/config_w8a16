@@ -17,5 +17,10 @@
     {
         "model_name": "chatglm3-6b-32k_w8a16_wo_kv",
         "args": "--model=chatglm3-6b-32k_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len 32768 --quantization=w8a16 --dataset=./llm_samples_new/chatglm/chatglm3-6b-32k_w8a16.json --tensor-parallel-size=1 --save-output=./output/chatglm/chatglm3-6b-32k_w8a16.json --trust-remote-code"
+    },
+
+    {
+        "model_name": "glm-4-9b-w8a16",
+        "args": "--model=glm-4-9b-w8a16 --device=cuda --backend=vllm --dataset=./llm_samples_new/chatglm/glm-4-9b-w8a16.json --output-len=256 --trust-remote-code --max-model-len=8192 --dtype=float16 --quantization=w8a16 --save-output=./output/chatglm/glm-4-9b-w8a16.json"
     }
 ]
