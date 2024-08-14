@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "codellama_70b_instruct_w8a16_wo_kv",
+        "args": "--model=codellama_70b_instruct_w8a16_wo_kv --device=cuda --dtype=float16 --dataset=./llm_samples_new/codellama/codellama-70b-instruct-quant-float16-w8a16.json --quantization=w8a16 --tensor-parallel-size=2 --max-model-len=4096 --save-output=./output/codellama/codellama-70b-instruct-quant-float16-w8a16.json"
+    }
+]

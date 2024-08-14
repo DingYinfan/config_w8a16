@@ -22,5 +22,10 @@
     {
         "model_name": "chatglm3-6b-32k_w8a16_wo_kv",
         "args": "--vllm-path=chatglm3-6b-32k_w8a16_wo_kv --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=1 --model-kwargs dtype=float16 quantization=w8a16"
+    },
+ 
+    {
+        "model_name": "glm-4-9b-w8a16",
+        "args": "--vllm-path=glm-4-9b-w8a16 --device=cuda --datasets=mmlu_ppl --batch-size=8 --model-kwargs dtype=float16 quantization=w8a16 gpu_memory_utilization=0.5 --max-partition-size 1000000"
     }
 ]

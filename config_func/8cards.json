@@ -2,5 +2,10 @@
     {
         "model_name": "bloomz_w8a16_wo_kv",
         "args": "--model=bloomz_w8a16_wo_kv --device=cuda --dtype=float16 --max-model-len=2048 --quantization=w8a16 --dataset=./llm_samples_0.3.3/bloomz/bloomz_w8a16_wo_kv-half.json --tensor-parallel-size=8 --save-output=./real_data_json/bloomz/bloomz_w8a16_wo_kv-half.json"
+    },
+
+    {
+        "model_name": "mixtral_8x22b_w8a16",
+        "args": "--model=mixtral_8x22b_w8a16 --device=cuda --tensor-parallel-size=8 --dtype=float16 --max-model-len=65536 --dataset=./llm_samples_new/mixtral/Mixtral-8x22B-v0.1_w8a16_wo_kv-auto.json --quantization w8a16 --save-output=./output/mixtral/Mixtral-8x22B-v0.1_w8a16_wo_kv-auto.json"
     }
 ]

@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "moose-34b_w8a16",
+        "args": "--model=moose-34b_w8a16 --device=cuda --tensor-parallel-size 2 --dtype float16 --max-model-len 32768 --dataset ./llm_samples_new/moose/moose-34b_w8a16-float16.json --quantization w8a16 --save-output=./output/moose/moose-34b_w8a16-float16.json"
+    }
+]

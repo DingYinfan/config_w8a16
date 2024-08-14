@@ -6,6 +6,11 @@
 
     {
         "model_name": "llama3_70b_w8a16_groupsize_64",
-        "args": "--vllm-path=llama3_70b_w8a16_groupsize_64 --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval --work-dir=outputs --max-out-len=10 --batch-size=1 --tensor-parallel-size=8 --model-kwargs dtype=float16 max_model_len=8192 quantization=w8a16"
+        "args": "--vllm-pathllama3_70b_w8a16_groupsize_64 --device=cuda --datasets=ceval_gen --data-dir=tinydata/ceval/formal_ceval  --work-dir=outputs --models=vllm_llama3_70b"
+    },
+
+    {
+        "model_name": "mixtral_8x22b_w8a16",
+        "args": "--vllm-path=mixtral_8x22b_w8a16 --device=cuda --datasets ceval_gen --data-dir=tinydata/ceval/formal_ceval --batch-size=4 --max-out-len=10 --work-dir=outputs --tensor-parallel-size=8 --model-kwargs dtype=float16 max_model_len=65536 quantization=w8a16"
     }
 ]

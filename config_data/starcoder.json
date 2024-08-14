@@ -1,0 +1,6 @@
+[
+    {
+        "model_name": "starcoder2_15b_w8a16_wo_kv",
+        "args": "--vllm-path=starcoder2_15b_w8a16_wo_kv --device=cuda --datasets=humaneval_gen_starcoder2 --models=vllm_deepseek_coder.py --data-dir=tinydata/humaneval/human-eval-v2-20210705.jsonl --max-partition-size=10000000"
+    }
+]

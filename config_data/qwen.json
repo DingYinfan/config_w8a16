@@ -12,5 +12,10 @@
     {
         "model_name": "Qwen-72B-Chat_w8a16_wo_kv",
         "args": "--vllm-path=Qwen-72B-Chat_w8a16_wo_kv --device=cuda --datasets=mmlu_gen_79e572 --data-dir=tinydata/mmlu --work-dir=outputs --tensor-parallel-size=4 --model-kwargs dtype=float16 quantization=w8a16 max_model_len=2048"
+    },
+
+    {
+        "model_name": "Qwen1.5_32B_w8a16_wo_kv",
+        "args": "--vllm-path=Qwen1.5_32B_w8a16_wo_kv --device=cuda --datasets=mmlu_gen --data-dir=tinydata/mmlu --model-kwargs max_model_len=4096 dtype=float16 quantization=w8a16 --max-partition-size 10000000"
     }
 ]
